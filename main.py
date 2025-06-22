@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 def send_email(subject, body):
     sender = os.getenv("SENDER_EMAIL")
     password = os.getenv("SENDER_PASSWORD")
-    receiver = os.getenv("RECIEVER_EMAIL")
+    receiver = os.getenv("RECEIVER_EMAIL")
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
